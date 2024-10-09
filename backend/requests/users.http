@@ -1,0 +1,39 @@
+### 1. Register User : OK utilizzare postman per caricare immagine
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+  "name": "carlo",
+  "email": "alberto@carlo.com",
+  "password": "123456"
+}
+
+###
+
+### 2. Login utente : OK
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "ronaldo@cristiano.com",
+  "password": "123456"
+}
+
+###
+
+### 3. Profilo utente loggato : OK
+GET http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNjM5MDAxOSwiZXhwIjoxNzI4OTgyMDE5fQ.esODSly5QkUQF_BZ5apHQzRZixcMr5K5lvhGbjEaEiY
+
+###
+
+### 4. Modifica + aggiornamento profilo utente : OK
+PUT http://localhost:5000/api/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjI5OTIzNywiZXhwIjoxNzI4ODkxMjM3fQ.YVPozwWrOKVZ4-MTHNM6XZEaYiyY1g9Rief4ico-A14
+Content-Type: application/json
+
+{
+  "name": "ronaldino",
+  "email": "ronaldo@cristiano.com",
+  "password": "123456"
+}

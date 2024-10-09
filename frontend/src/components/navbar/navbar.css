@@ -1,0 +1,99 @@
+.bg-navbar {
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 999; */
+}
+
+.navbar-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 80x;
+  width: 80px;
+  margin-bottom: 0px;
+}
+
+.navbar-lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  min-width: 200px;
+}
+
+/* Layout mobile */
+@media (max-width: 992px) {
+  .navbar-lower {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 60x;
+    width: 60px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  .navbar-logo-toggle-container {
+    width: 100%;
+  }
+
+  /* Posizionamento logo a sinistra e toggle a destra */
+  .navbar-brand {
+    order: 1;
+  }
+
+  .navbar-toggle {
+    order: 2;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-collapse .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-collapse .nav-link {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse .form-inline {
+    width: 100%;
+  }
+}
+
+/* Stile base per i link della navbar */
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  margin-bottom: 2px;
+}
+
+/* Stile hover per i link della navbar */
+.nav-link:hover {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  color: #000; 
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+

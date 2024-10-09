@@ -1,0 +1,33 @@
+.m-body{
+    margin-top: 180px;
+}
+
+/* Centrare l'immagine e impostare una grandezza standard */
+.img-detail {
+    display: block;
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  button {
+    border-radius: 0px!important;
+  }
+  .profile-image-detail {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  /* Stile immagine schermi piccoli */
+  @media (max-width: 768px) {
+    .img-detail {
+      max-width: 100%;
+      max-height: 200px;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+### . Ricevo tutti i commenti di un prodotto : ok
+GET http://localhost:5000/api/comments/66e53e13ce59a9e6b98c7e22
+
+###
+
+### 2. Aggiungo un commento ad un prodotto : ok
+POST http://localhost:5000/api/comments/66e53e13ce59a9e6b98c7e22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNzExNTczNiwiZXhwIjoxNzI3MTE5MzM2fQ.rC3WF8IXlUH_PsB5PZyvbHV2FqoCpFy4DhNTWcIRZHs
+Content-Type: application/json
+
+{
+  "content": "Incredibili !"
+}
+
+###
+
+### 3. Modifica del singolo commento con id associato : OK
+PUT http://localhost:5000/api/comments/66e54682a913c14575360cc2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNzExNTczNiwiZXhwIjoxNzI3MTE5MzM2fQ.rC3WF8IXlUH_PsB5PZyvbHV2FqoCpFy4DhNTWcIRZHs
+Content-Type: application/json
+
+{
+  "content": "Taralli TROPPO buoni2!"
+}
+
+###
+
+### 4. Cancello commento : ok
+DELETE http://localhost:5000/api/comments/66e549cce849bee01c123fab
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjI5OTIzNywiZXhwIjoxNzI4ODkxMjM3fQ.YVPozwWrOKVZ4-MTHNM6XZEaYiyY1g9Rief4ico-A14

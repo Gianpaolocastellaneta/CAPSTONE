@@ -1,0 +1,43 @@
+### 1. TUTTI I PRODOTTI DI TUTTI GLI UTENTI
+GET http://localhost:5000/api/products
+
+###
+
+### 2. Prodotto con id associato
+GET http://localhost:5000/api/products/66e53e13ce59a9e6b98c7e22
+
+### 3. Prodotti di uno specifico utente
+GET http://localhost:5000/api/products/productsUser
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNjg2MTU1MiwiZXhwIjoxNzI2ODY1MTUyfQ.hDiSPaGiHRrptKmh-vvaTTnOEM-HaT9rizPbu_AStI4
+
+### 4. CREO PRODOTTO PER UTENTE LOGGATO : OK DA POSTMAN (NON PUNZIONA PER IL FILE OBBLIGATORIO EFFETTUARE RICHIESTA DA POSTMAN)
+POST http://localhost:5000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjg2MDQ4MCwiZXhwIjoxNzI2ODY0MDgwfQ.wBfvIUYm1Cfabulv1kIWXT-r2p194GY8bxaKJ3X6Qkw
+Content-Type: application/json
+
+{
+  "name": "Taralli",
+  "description": "Taralli pugliese al calzone con uvetta",
+  "price": 5.99,
+  "image": "www.taralli.it"
+}
+
+###
+
+### 5. Modifica prodotto con id associato : OK DA POSTMAN (EFFETTUARE RICHIESTA DA POSTAMN X IL FILE) 
+PUT http://localhost:5000/api/products/66e543d97a4198b8d2833f2a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjg2MDQ4MCwiZXhwIjoxNzI2ODY0MDgwfQ.wBfvIUYm1Cfabulv1kIWXT-r2p194GY8bxaKJ3X6Qkw
+Content-Type: application/json
+
+{
+  "name": "Taralli1",
+  "description": "Taralli pugliese al calzone con uvetta passa buona",
+  "price": 7.99,
+  "image": "www.taralli2.it"
+}
+
+###
+
+### 6. Elimino prodotto con id associato : OK
+DELETE http://localhost:5000/api/products/66e53edcce59a9e6b98c7e2e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjI5OTIzNywiZXhwIjoxNzI4ODkxMjM3fQ.YVPozwWrOKVZ4-MTHNM6XZEaYiyY1g9Rief4ico-A14

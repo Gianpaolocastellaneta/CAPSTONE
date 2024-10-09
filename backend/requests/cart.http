@@ -1,0 +1,37 @@
+### 1. Aggiungo prodotti al carrello : ok
+
+POST http://localhost:5000/api/cart/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNjU4OTgyMSwiZXhwIjoxNzI2NTkzNDIxfQ.lOAvjC9S4E9Nn27VhsO5d85E0bz2vWuj8XvFq7SkMNM
+Content-Type: application/json
+
+{
+  "productId": "66e53e13ce59a9e6b98c7e22",
+  "quantity": 2
+}
+
+### 2. Ottengo tutto il carrello : ok
+
+GET http://localhost:5000/api/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTY5ZWJmYWExNTQ0MzQwNjA2ZmI3NiIsImlhdCI6MTcyNjU4OTgyMSwiZXhwIjoxNzI2NTkzNDIxfQ.lOAvjC9S4E9Nn27VhsO5d85E0bz2vWuj8XvFq7SkMNM
+
+### 3. Rimuovo un prodotto dal carrello : ok
+
+DELETE http://localhost:5000/api/cart/remove/66e53e13ce59a9e6b98c7e22
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjM4NjEyOCwiZXhwIjoxNzI4OTc4MTI4fQ.kv60CSNhH38dbrngpPiXhYIhR3BKGaTDuIVVfB4JmOM
+
+### 4. Modifico la quantità di un prodotto : ok
+
+PUT http://localhost:5000/api/cart/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjM4NjEyOCwiZXhwIjoxNzI4OTc4MTI4fQ.kv60CSNhH38dbrngpPiXhYIhR3BKGaTDuIVVfB4JmOM
+Content-Type: application/json
+
+{
+  "productId": "66e53e13ce59a9e6b98c7e22",
+  "quantity": 7
+}
+
+### 5. Svuoto il carrello : ok
+
+DELETE http://localhost:5000/api/cart/clear
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTUzYzUyY2U1OWE5ZTZiOThjN2UwYyIsImlhdCI6MTcyNjM4NjEyOCwiZXhwIjoxNzI4OTc4MTI4fQ.kv60CSNhH38dbrngpPiXhYIhR3BKGaTDuIVVfB4JmOM
+

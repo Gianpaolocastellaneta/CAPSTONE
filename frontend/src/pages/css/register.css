@@ -1,0 +1,43 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altezza della viewport */
+    margin-top: 160px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 400px; 
+  }
+  
+  .register-box {
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+    border-radius: 0px;
+  }
+  
+ .btn-register .btn {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0px;
+  }
+  
+  @media (max-width: 992px) {
+    .register-container {
+      margin-top: 80px;
+    }
+  }

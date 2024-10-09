@@ -1,0 +1,26 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-info {
+    display: flex;
+    flex-direction: column; /* Disporre le informazioni in colonna */
+  }
+
+  .m-body{
+    margin-top: 180px;
+}
+
+.btn-cart-remove{
+  width: 20%;
+}
+
+
+
+@media (max-width: 768px) {
+  .btn-cart-remove{
+    width: 100%;
+  }
+
+}
