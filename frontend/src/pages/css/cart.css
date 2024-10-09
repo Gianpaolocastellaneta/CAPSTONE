@@ -5,7 +5,7 @@
   
   .cart-info {
     display: flex;
-    flex-direction: column; /* Disporre le informazioni in colonna */
+    flex-direction: column;
   }
 
   .m-body{
